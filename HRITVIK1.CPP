@@ -1,0 +1,44 @@
+//Program to do mathematical operations.
+#include<stdio.h>
+int main()
+{
+int a,b,c,d;
+printf("Enter 1st Value= ");
+scanf("%d",&a);
+printf("Enter 2nd Value= ");
+scanf("%d",&b);
+printf("\n\nPress 1 For Addition");
+printf("\nPress 2 For Subtraction");
+printf("\nPress 3 For Multiplacation");
+printf("\nPress 4 For Division");
+printf("\nPress 5 For Modulo Division");
+printf("\n\nEnter Your Choise= ");
+scanf("%d",&c);
+switch (c)
+{
+case 1:
+d=a+b;
+printf("\nAddition Is= %d",d);
+break;
+case 2:
+d=a-b;
+printf("\nSubtraction Is= %d",d);
+break;
+case 3:
+d=a*b;
+printf("\nMultiplacation Is= %d",d);
+break;
+case 4:
+d=a/b;
+printf("\nDivision Is= %d",d);
+break;
+case 5:
+d=a%b;
+printf("\nModulo Division Is= %d",d);
+break;
+default:
+printf("\nInvalid Entry");
+break;
+}
+return 0;
+}
